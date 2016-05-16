@@ -4,4 +4,7 @@
    <FileRef
       location = "container:GGLoading/GGLoading.xcodeproj">
    </FileRef>
+   <FileRef
+      location = "group:GGLoadingExample/GGLoadingExample.xcodeproj">
+   </FileRef>
 </Workspace>

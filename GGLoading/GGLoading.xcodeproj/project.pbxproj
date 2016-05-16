@@ -10,6 +10,7 @@
 		98A42F491CE9934C0036ACB4 /* GGLoading.h in Headers */ = {isa = PBXBuildFile; fileRef = 98A42F481CE9934C0036ACB4 /* GGLoading.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		98A42F501CE9934C0036ACB4 /* GGLoading.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98A42F451CE9934C0036ACB4 /* GGLoading.framework */; };
 		98A42F551CE9934C0036ACB4 /* GGLoadingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98A42F541CE9934C0036ACB4 /* GGLoadingTests.swift */; };
+		98A42F601CE9A6D10036ACB4 /* GGLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98A42F5F1CE9A6D10036ACB4 /* GGLoadingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		98A42F4F1CE9934C0036ACB4 /* GGLoadingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GGLoadingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		98A42F541CE9934C0036ACB4 /* GGLoadingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GGLoadingTests.swift; sourceTree = "<group>"; };
 		98A42F561CE9934C0036ACB4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		98A42F5F1CE9A6D10036ACB4 /* GGLoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GGLoadingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 			children = (
 				98A42F481CE9934C0036ACB4 /* GGLoading.h */,
 				98A42F4A1CE9934C0036ACB4 /* Info.plist */,
+				98A42F5F1CE9A6D10036ACB4 /* GGLoadingView.swift */,
 			);
 			path = GGLoading;
 			sourceTree = "<group>";
@@ -194,6 +197,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				98A42F601CE9A6D10036ACB4 /* GGLoadingView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -310,6 +314,7 @@
 		98A42F5A1CE9934C0036ACB4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -320,12 +325,14 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.igroomgrim.GGLoading;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		98A42F5B1CE9934C0036ACB4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -378,6 +385,7 @@
 				98A42F5B1CE9934C0036ACB4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		98A42F5C1CE9934C0036ACB4 /* Build configuration list for PBXNativeTarget "GGLoadingTests" */ = {
 			isa = XCConfigurationList;
@@ -386,6 +394,7 @@
 				98A42F5E1CE9934C0036ACB4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
